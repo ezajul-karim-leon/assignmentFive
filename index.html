@@ -17,10 +17,10 @@
                 <p>Dev<span class="font-bold text-xl">Board</span></p>
             </div>
             <div class="flex items-center justify-center gap-10">
-                <!-- <input class="w-10" type="checkbox" checked>  -->
+                
                  <div class="flex justify-center items-center rounded-full bg-gray-200 px-3 py-2">
                     <img class="w-4 h-5 mr-2" src="assets/checkbox.png" alt="">
-                    <p id="reduce" class="font-bold">23</p>
+                    <p id="increment" class="font-bold">23</p>
                  </div>
                 <div class="rounded-full p-2 bg-gray-200">
                     <img id="themeBtn" class="w-7" src="assets/theme-btn.png" alt="">
@@ -37,16 +37,16 @@
                             <div>
                                 <img src="assets/checkbox.png" class="w-5" alt="">
                             </div>
-                            <small class="font-bold">Task Assigned <br><span class="text-xl font-extrabold">6</span></small>
+                            <small class="font-bold">Task Assigned <br><span id="decrement" class="text-xl font-extrabold">6</span></small>
                         </div>
                     </div>
-                    <div class="flex  items-center gap-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-3 py-2 w-6/12">
+                    <div id="discover" class="flex  items-center gap-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-3 py-2 w-6/12">
                         <img class="w-12 " src="assets/board.png" alt="">
                         <p class="text-white font-bold">Discover Something <br> New Today!</p>
                     </div>
-                    <div class="w-3/12 bg-gray-200 rounded-xl p-2">
+                    <div class="flex gap-2 w-3/12 bg-gray-200 rounded-xl p-2">
                         <img src="assets/calender.png" alt="">
-                        <p class="date"></p>
+                        <p id="date" class="font-bold"></p>
                     </div>
                 </div>
     
@@ -54,74 +54,79 @@
                 <div class="py-6 px-3 grid grid-cols-3 gap-3 ">
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl p-1">Shop Ease</small>
-                        <h3 id="title" class="font-bold text-xl mt-2">Fix Mobile Button Issue</h3>
+                        <h3 id="title1" class="font-bold text-xl mt-2">Fix Mobile Button Issue</h3>
                         <p class="bg-white rounded-xl px-3 py-1 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button id="btn1" class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn1" class="btn bg-[#3752FD] text-white font-bold hover:text-black ">Completed</button>
                         </div>
                     </div>
+
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl p-1">Soft Pay</small>
-                        <h3 class="font-bold text-xl mt-2">Add Pay success Modal</h3>
+                        <h3 id="title2" class="font-bold text-xl mt-2">Add Pay success Modal</h3>
                         <p class="bg-white rounded-xl px-3 py-1 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn2" class="btn bg-[#3752FD] text-white font-bold hover:text-black actionBtn">Completed</button>
                         </div>
                     </div>
+
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl px-3 py-1">Meta</small>
-                        <h3 class="font-bold text-xl mt-2">Add New Reaction 🤚🤚</h3>
+                        <h3 id="title3" class="font-bold text-xl mt-2">Add New Reaction 🤚🤚</h3>
                         <p class="bg-white rounded-xl px-3 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn3" class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
                         </div>
                     </div>
+
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl p-1">Programing Hero</small>
-                        <h3 class="font-bold text-xl mt-2">Fix Video Loading Issue</h3>
+                        <h3 id="title4" class="font-bold text-xl mt-2">Fix Video Loading Issue</h3>
                         <p class="bg-white rounded-xl px-3 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn4" class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
                         </div>
                     </div>
+
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl p-1">Google LLC</small>
-                        <h3 class="font-bold text-xl mt-2">Integrae AI search</h3>
+                        <h3 id="title5" class="font-bold text-xl mt-2">Integrae AI search</h3>
                         <p class="bg-white rounded-xl px-3 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn5" class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
                         </div>
                     </div>
+
                     <div class="bg-gray-200 rounded-xl p-3">
                         <small class="bg-white rounded-xl p-1">Polygon Tech</small>
-                        <h3 class="font-bold text-xl mt-2">Review Ami Probashi Site</h3>
+                        <h3 id="title6" class="font-bold text-xl mt-2">Review Ami Probashi Site</h3>
                         <p class="bg-white rounded-xl px-3 h-20 overflow-hidden my-2 text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         <div class="flex justify-between">
                             <div>
                                 <p>Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
+                            <button id="btn6" class="btn bg-[#3752FD] text-white font-bold hover:text-black">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -137,7 +142,7 @@
                     </div>
                     <button id="removeActivity" class="btn mt-3 text-white bg-[#3752FD]">Clear History</button>
                 </div>
-                <div id="div"></div>
+                <div id="activityList"></div>
 
               </div>
          </section>
