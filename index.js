@@ -4,6 +4,15 @@ function disableBtn(id){
    return disableButton;
 }
 
+//
+function secondeAlert (){
+    const decrement=document.getElementById('decrement');
+    const convertedDecrement=parseInt(decrement.innerText);
+    if (convertedDecrement === 0){
+    alert('Congratulation You have completed all the current task ');
+    }
+}
+
 // increment function
 function valueIncrement(){
     let increment = document.getElementById('increment');
@@ -43,9 +52,11 @@ document.getElementById('date').innerText = formattedDate;
 
 // discover div click action 
 document.getElementById('discover').addEventListener('click', ()=>{
-   const some= window.location.href ='qusAndAns.html';
-   console.log(some);
+   window.location.href ='qusAndAns.html';
+   
 })
+
+
 
 
 //complete button click action
@@ -55,6 +66,7 @@ document.getElementById('btn1').addEventListener('click', ()=>{
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ();
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
@@ -72,6 +84,7 @@ document.getElementById('btn2').addEventListener('click', ()=>{
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ()
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
@@ -89,6 +102,7 @@ document.getElementById('btn3').addEventListener('click', ()=>{
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ();
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
@@ -106,6 +120,7 @@ document.getElementById('btn4').addEventListener('click', ()=>{
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ();
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
@@ -123,6 +138,7 @@ document.getElementById('btn5').addEventListener('click', ()=>{
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ();
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
@@ -136,11 +152,12 @@ document.getElementById('btn5').addEventListener('click', ()=>{
 
 })
 document.getElementById('btn6').addEventListener('click', ()=>{
-    alert('Board updated Successfully.')
+    alert('Board updated Successfully.');
     disableBtn('btn6');
 
     valueIncrement();
     valueDecrement();
+    secondeAlert ()
   
     const currentDate = new Date();
     const currentTime = currentDate.toLocaleTimeString();
